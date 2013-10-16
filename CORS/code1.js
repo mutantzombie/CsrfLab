@@ -5,7 +5,8 @@ $(document).ready(function() {
 
 $("#dragon").submit(function(event) {
   $.ajax({
-    url: "dragon.php",
+//    url: "dragon.php",
+    url: "http://web.site/CsrfLab/CORS/dragon.php",
     data: 'act=' + $("#act").val() + '&gems=' + $("#gems").val(),
     error: function(jqXHR, textStatus, errorThrown) {
       $("#results").html(textStatus + ", " + errorThrown);
