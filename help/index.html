@@ -1,0 +1,16 @@
+<!doctype html>
+<html
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<table>
+<tr><th>Curl
+<tr><td>curl --url http://web.site
+<tr><th>Netcat
+<tr><td>echo -e "GET / HTTP/1.0\r\nHost: web.site\r\n\r\n" | nc -v web.site 80
+<tr><th>OpenSSL
+<tr><td>echo -e "GET / HTTP/1.0\r\nHost: web.site\r\n\r\n" | openssl -quiet -connect web.site:443
+</table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+<a href="http://beefproject.com">http://beefproject.com</a><br>
+Installation
+<pre>
+$ git clone https://github.com/beefproject/beef.git
+$ cd beef
+$ sudo bundle update
+$ ./beef
+[18:14:22][*] Bind socket [imapeudora1] listening on [0.0.0.0:2000].
+[18:14:23][*] Browser Exploitation Framework (BeEF) 0.4.4.8-alpha
+[18:14:23]    |   Twit: @beefproject
+[18:14:23]    |   Site: http://beefproject.com
+[18:14:23]    |   Blog: http://blog.beefproject.com
+[18:14:23]    |_  Wiki: https://github.com/beefproject/beef/wiki
+[18:14:23][*] Project Creator: Wade Alcorn (@WadeAlcorn)
+[18:14:23][*] BeEF is loading. Wait a few seconds...
+[18:14:31][*] 10 extensions enabled.
+[18:14:31][*] 187 modules enabled.
+[18:14:31][*] 2 network interfaces were detected.
+[18:14:31][+] running on network interface: 127.0.0.1
+[18:14:31]    |   Hook URL: http://127.0.0.1:3000/hook.js
+[18:14:31]    |_  UI URL:   http://127.0.0.1:3000/ui/panel
+[18:14:31][+] running on network interface: 10.0.0.130
+[18:14:31]    |   Hook URL: http://10.0.0.130:3000/hook.js
+[18:14:31]    |_  UI URL:   http://10.0.0.130:3000/ui/panel
+[18:14:31][*] RESTful API key: d6186ae04c0028c1454dd8cca268e5620bb50738
+[18:14:31][*] HTTP Proxy: http://127.0.0.1:6789
+[18:14:31][*] BeEF server started (press control+c to stop)
+</pre>
+Infect victim with hook.js
+</body>
+</html>
